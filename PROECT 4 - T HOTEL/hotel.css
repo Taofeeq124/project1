@@ -1,0 +1,481 @@
+
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: .3em;
+}
+
+.navbar{
+    padding: .8rem; 
+    background-color: #55a8ae !important;
+    padding-right: 30px;
+ }
+ .navbar-nav li{
+     padding-right: 25px;
+ }
+ .nav-link{
+     font-size: 1.8em !important;
+     color: #eef6f7 !important;
+     font-weight: 600;
+ }
+ .nav-link:hover {
+     color: white !important;
+ }
+
+.padding{
+    padding-bottom: 2rem;
+}
+
+/* Carousel section*/
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%)
+}
+.carousel-caption h1{
+    font-size: 400%;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 12px #000;
+}
+ul .circle{
+    border-radius: 50%;
+    padding: 4px;
+}
+.btn-primary{
+    background-color: #55a8ae !important;
+    border:2px solid  #55a8ae !important;
+    margin-top: 30px;
+    border-radius:12px;
+    font-weight: 500;
+}
+
+.btn-primary:hover{
+    background-color: #f1f2f2 !important;
+    border:2px solid #55a8ad !important;
+    color: #55a8ae;
+    font-weight: 600;
+}
+
+/* RESERVATION SECTION */
+h1.head{
+    color: #55a8ae;
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+ p.forms{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+input[type=date], select {
+    width: 100%!important;
+    padding: 12px 20px;
+    margin: 8px 0;
+    line-height: .8em!important;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.check2{
+    background-color: #55a8ae !important;
+    border:2px solid  #55a8ad!important;
+    margin-top:4px;
+    border-radius:4px;
+    font-weight: 600;
+}
+
+.check2:hover{
+    background-color: #eeeeee !important;
+    border:2px solid #55a8ad !important;
+    color: #55a8ae;
+    font-weight: 600;
+}
+
+/* Rooms and Rates */
+h1.head-badge{
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-left: 270px;
+    padding: 20px 0 30px 0;
+    color: #55a8ae;
+}
+a.badges span{
+    background-color: #eeeeee;
+    padding: 8px;
+    border-radius: 50%;
+    color: #55a8ae;
+}
+div.bd{
+    padding-top:40px;
+}
+
+a.badges span:hover{
+    background-color: grey;
+    padding: 10px;
+    color: #f1f2f2;
+}
+p.tv{
+    font-weight: 500;
+    line-height: 4px;
+}
+
+/* FACILITIES SECTION */
+div h1.head{
+    padding: 20px 0 30px  0;
+   
+}
+
+.cont-big  {
+    background-image: url("ewan-yap.jpg");
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+ div .bar h3{
+   font-weight: 700;
+   font-size: 2em;
+   margin-top: 10px;
+   text-shadow: 1px 1px 8px #000;
+   color: #f1f2f2!important;
+    
+}
+div img .fluid{
+ padding: 20px 0;   
+z-index: 90;
+color: #f1f2f2!important;
+}
+
+/* Testimonial SECTION */
+
+
+h1.head-badge{
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-left: 270px;
+    color: #55a8ae;
+}
+a.badges span{
+    background-color: #eeeeee;
+    padding: 7px;
+    border-radius: 50%;
+    color: #55a8ae;
+}
+
+a.badges span:hover{
+    background-color: grey;
+    padding: 10px;
+    color: #f1f2f2;
+}
+.img-test img{
+    border-radius: 50%;
+    box-shadow: 1px 1px 7px #000;
+}
+.img-test p{
+    color: gray;
+    font-weight:400;
+}
+.img-test h4{
+    margin-bottom: 30px;
+}
+
+
+/* Contact SECTION */
+.jumbotron{
+    margin-bottom: 0px!important;
+}
+
+.contact-U h1{
+    font-weight: 700;
+    font-size: 3em;
+    color: #55a8ae!important;
+    margin-left: 250px;
+    padding-bottom: 5px;
+}
+input[type=text], select {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-bottom: 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=textarea], select {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-bottom: 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=email], select {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-bottom: 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 60%;
+    background-color:white;
+    color: black;
+    padding: 18px 20px;
+    margin-bottom: 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    border: 1px solid #ccc;
+    color: white;
+    background-color:grey;
+    font-size: 1.5em;
+    font-weight: 400;
+
+}
+form input{
+    margin-bottom: px;
+}
+
+div.contact-form {
+    background-size:cover; 
+    border-radius: 5px;
+    background-color: #55a8ae;
+    padding:110px 0 0 0;
+    width: 60%;
+}
+/* Footers*/
+div.footer{
+    background-color: #55a8ae;
+    margin: 0;
+    color: #f1f2f2!important;
+    line-height: .8em;
+}
+
+.fa-envelope-square{
+    color: #3b5998;
+    margin:0 8px 0 0;
+    padding-right: 3px;
+}
+.fa-phone{
+    color:#00aced;
+    margin:0 8px 0 0;
+    padding-right: 3px;
+}
+.fa-map-marker{
+    color:#f1f2f2;
+    margin:0 8px 0 0;
+    padding-right: 3px;
+}
+.fa-facebook{
+    color: #3b5998;
+    margin-left: 8px;
+}
+.fa-twitter{
+    color:#00aced;
+    margin-left: 8px;
+}
+.fa-linkedin-in{
+    color:#517fa4;
+    margin-left: 8px;
+}
+
+/* Bootstrap padding fix*/
+[class*="col-"]{
+    padding: 1rem;
+}
+@media (max-width:576px) {
+    
+.carousel-caption h1{
+    font-size: 200%;
+    font-weight: 500;
+  
+}
+
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
+
+.btn-primary{
+    
+    margin-top: 20px;
+   
+}
+
+.navbar-nav li{
+    padding-bottom:15px;
+    font-size: 1em;
+
+}
+
+h1.head{
+    font-weight: 500;
+    font-size: 2em;
+}
+
+input[type=date], select {
+    width: 60%!important;
+    padding: 8px 10px;
+    margin: 8px 0;
+    line-height: .6em!important;
+   
+}
+
+p.forms{
+   
+    margin-left:100px;
+    margin-bottom: 4px;
+    font-weight: 600;
+ 
+}
+
+h1.head-badge{
+    font-weight: 700;
+    font-size: 2em;
+    margin-left: 100px;
+}
+
+div .card img{
+    width:300px;
+    height:200px ;
+
+}
+div.bar{
+    display: none;
+}
+
+.contact-U h1{
+    font-weight: 600;
+    font-size: 2em;
+    margin-left: 40px;
+    padding-bottom: 5px;
+}
+div img.map{
+    width:90%;
+    height: 90%;
+}
+
+div.contact-form {
+    padding:20px 0 0 0;
+    width: 70%;
+    margin-left: 70px;
+}
+
+div.footer{
+    display: block;
+    align-items: center;
+    text-align: center;
+    line-height: .9em;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+div h5{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+
+}
+
+@media (max-width:768px) {
+
+    
+div.bar{
+    display: none;
+}
+
+div.footer{
+    display: block;
+    align-items: center;
+    text-align: center;
+    line-height: .9em;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+div h5{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.contact-U h1{
+    font-weight: 600;
+    font-size: 2.4em;
+    margin-left: 40px;
+    padding-bottom: 5px;
+}
+
+div img.map{
+    width:80%;
+    height: 80%;
+}
+
+div.contact-form {
+    padding:20px 0 0 0;
+    width: 60%;
+    
+}
+
+h1.head-badge{
+    font-weight: 600;
+    font-size: 2.4em;
+    margin-left: 140px;
+   
+}
+a.badges span{
+    margin-lef: 10px;
+}
+   
+.carousel-caption h1{
+    font-size: 200%;
+    font-weight: 500;
+  
+}
+
+div .card img{
+    width:552px;
+    height:300px ;
+
+}
+}
+
+/*
+Extra small (xs) devices [portrait phones, less than 576px]
+No media query since this is the default in Bootstrap
+
+Small (sm) devices [Landscape phones, 576px and up]
+@media (min-width:576px) {...}
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width:768px) {...}
+
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width:992px) {...}
+
+
+Extra Large (xl) devices (Large Desktops, 1200px and up)
+@media (min-width:1200px) {...}
+*/
