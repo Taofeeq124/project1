@@ -1,0 +1,545 @@
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: .7em;
+    color: black!important;
+}
+div.back{
+    background-image: url("hotell.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-position: relative;
+}
+div .main-cont{
+    margin-top: 0px !important;
+}
+nav .cont{
+    padding: .8rem; 
+    background-color: white !important;
+    padding-right: 10px;
+    height: 100px;
+ }
+ span.city{
+     padding-left: 30px;
+     font-size: 1.3em;
+     font-weight: 600 !important;
+ }
+ .cosmo-city h2{
+     font-weight: 700;
+     font-size: 1.8em;
+ }
+ .nav-lin{
+    color: black !important;
+    margin-top: 15px;
+    margin-right:200px !important ;
+    list-style: none;
+ }
+ 
+ .nav-lin:hover {
+   color: #7b8bc7;
+ }
+ 
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+ .nav-link{
+     font-size: 1.4em !important;
+     color: black !important;
+     font-weight: 600;
+     margin-top: 15px;
+     margin-left: ;
+ }
+ .nav-link:hover {
+     color:#7b8bc7 !important;
+ }
+ div.fontawesome{
+    background-color: #7b8bc7 ;
+    height: 100px;
+ 
+ }
+ div.up{
+    margin-top: 23%!important;
+    color:white;
+ }
+ .well-c{
+     font-weight: 700;
+     font-size: 3.6em;
+     font-family: 'Courier New', Courier, monospace!important;
+     text-shadow: 2px 2px 12px black;
+ }
+ 
+ .well-d{
+    font-weight: 600;
+    font-size: 1.7em;
+    margin-top: 10px;
+}
+.v-side1{
+    font-weight: 1000;
+    font-size: 2.8em;
+    color: #ffffff !important;
+}
+
+a:hover{
+    text-decoration: none!important;
+}
+
+.padding{
+    padding: 2rem 0;
+}
+
+/* Reservation  */
+.btn-primary{
+    background-color: #7b8bc7  !important;
+    border:2px solid  #7b8bc7 !important;
+    margin-bottom: 40px;
+    border-radius:5px;
+    font-weight: 500;
+    padding: 7px 14px;
+}
+
+.btn-primary:hover{
+    background-color: #7b8bc7  !important;
+    border:2px solid #7b8bc7  !important;
+    color: white;
+    font-weight: 600;
+}
+
+input[type=text], select {
+    width: 70%!important;
+    padding: 12px 20px;
+    margin: 5px 0;
+    line-height: .8em!important;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #ccc;
+}
+
+input[type=text]:focus {
+    border: 2px solid #7b8bc7;
+      
+}
+.v-side{
+    background-color: #ccc ;
+    padding: 12px 15px;
+    margin-left: .5px;
+}
+
+/* Peak  */
+div p.hr-1{
+    background-color: #7b8bc7  !important ;
+    padding: 2px;
+    width: 7%;
+    margin-left: 47%;
+}
+h1.peak{
+    font-weight: 600;
+    font-size: 2.8em;
+    color:#7b8bc7 ;
+}
+
+/* footers  */
+div .footer{
+   
+}
+
+ p.hr-2{
+    background-color: #7b8bc7  !important ;
+    padding: 1px;
+    width: 100%;
+}
+p.foot{
+    font-weight: 400;
+}
+
+p.foot:hover{
+    font-variant: small-caps;
+    font-weight: 500;
+    color: cornflowerblue;
+    font-style: oblique;
+}
+
+.fa-envelope-square{
+    color:  #7b8bc7;
+    margin:0 8px 0 0;
+    padding-right: 3px;
+}
+.fa-phone{
+    color: #7b8bc7;
+    margin:0 8px 0 0;
+    padding-right: 3px;
+}
+.fa-map-marker{
+    color: #7b8bc7;
+    margin:0 8px 0 0;
+    padding-right: 3px;
+}
+.fa-facebook{
+    color: black;
+    margin-left:  15px;
+}
+
+.fa-twitter{
+    color: black;
+    margin-left:  15px;
+}
+
+.fa-pinterest{
+    color: black;
+    margin-left:  15px;
+}
+
+.fa-instagram{
+    color: black;
+    margin-left: 15px;
+}
+
+input[type= submit] {
+    background-color: #7b8bc7;
+    padding: 12px 23px;
+    margin: 10px 0 0 235px;
+    font-weight: 400;
+    border-radius: 3px;
+}
+.fa-facebook:hover,.fa-instagram:hover,
+.fa-pinterest:hover,.fa-twitter:hover{
+ color: #acb6db;
+}
+
+input[type= submit]:hover {
+  font-weight:700;
+  color:whitesmoke;
+  background-color: cornflowerblue;
+
+}
+
+
+.home-foot input[type=text],input[type=email] {
+    width: 50%!important;
+    padding: 10px 20px;
+    margin: 5px 0;
+    line-height: .8em!important;
+    display: inline-block;
+    border: 1px solid #7b8bc7;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: white;
+
+}
+
+
+.home-foot input[type=text]:focus,input[type=email]:focus {
+    border: 2px solid #7b8bc7;
+    font-weight: 500;
+
+}
+
+/* Contact  */
+
+h1.cust{
+    font-size: 2.5em;
+    font-weight: 600;
+     margin-left: 15px;
+     margin-bottom: 30px;
+}
+.cust-b{
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+
+.form-cont input[type=text]{
+    width: 60%!important;
+    padding: 12px 20px;
+    line-height: .8em!important;
+    display: inline-block;
+    border: 1px solid #7b8bc7;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: white;
+  
+}
+
+
+.form-cont input[type=email]{
+    width: 60%!important;
+    padding: 12px 20px;
+    line-height: .8em!important;
+    display: inline-block;
+    border: 1px solid #7b8bc7;
+    border-radius: 4px;
+    box-sizing: border-box;
+  
+}
+
+.form-cont [type= textarea] {
+    color: gray;
+    width: 60%;
+    height: 170px;
+    box-sizing: border-box;
+    border: 1px solid #7b8bc7;
+    background-color: white;
+    resize: none;
+    margin-top: 8px;
+
+}
+.main-form{
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 18px;
+}
+
+.form-cont input[type= submit] {
+    background-color: #7b8bc7;
+    padding: 12px 23px;
+    margin: 10px 0 0 707px;
+    font-weight: 500;
+    border-radius: 3px;
+}
+
+/* facilities  */
+
+div .facili{
+    background-color: #e5e8ec;
+    margin-bottom: 15px;
+}
+
+div.space{
+    margin-left:140px;
+    padding:25px 4px;
+}
+.L-1{
+    padding: 7px;
+    font-size: 20px;
+}
+/* Rooms And Rate  */
+div.h4 h4{
+    font-weight: 600;
+    line-height:.8em ;
+}
+div.s-room{
+    padding:10px 0 5px 0 ;
+    border: 1px solid #7b8bc7;
+}
+
+div.s-room h2{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+div.s-room p.hot{
+    font-weight: 500;
+    margin-left: 7px;
+    line-height: .8em;
+
+}
+div.s-room a.book-Now{
+    background-color: #7b8bc7;
+    padding: 10px 15px ;
+    margin-left: 200px!important;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+
+}
+
+div.s-room a.book-Now:hover{
+   font-size: 17px;
+   font-weight: 600;
+   text-decoration: none;
+   color: white;
+
+}
+
+
+/* Media Query */
+@media(max-width:576px){
+
+    div.up{
+        margin-top: 45%!important;
+     }
+     .well-c{
+         font-weight: 600;
+         font-size: 2.6em;
+         }
+     
+     .well-d{
+        font-weight: 600;
+        font-size: 1.2em;
+        margin-top: 10px;
+    }
+    
+    div p.hr-1{
+    padding: 2px;
+    width:14%;
+    margin-left: 44%;
+
+    }
+
+    h1.peak{
+    font-size: 2.3em;
+
+    }
+
+    .videoContainer iframe{
+        max-width: 100%;
+        max-height: 100%;
+    }
+ 
+    .foot-mag{
+        margin-left: 55px;
+    }
+   
+    
+input[type= submit] {
+    padding: 12px 28px;
+    margin: 10px 0 35px 80px;
+  
+}
+
+
+.home-foot input[type=text],input[type=email] {
+    width: 80%!important;
+    padding: 10px 20px;
+    margin: 5px 0;
+}
+
+.marging-b{
+    margin: 10px 0 15px 55px;
+}
+ p.hr-3{
+    padding: 1px;
+    width:10%;
+    background-color: #7b8bc7;
+    margin: 8px 0 25px 80px;
+
+    }
+    p.foot{
+        font-weight: 600;
+    }
+/* Reservation*/
+    
+.btn-primary{
+    padding: 7px 12px;
+    margin-top: 20px;
+}
+
+
+    /* contact*/
+
+    
+h1.cust{
+    font-size: 2em;
+     margin-bottom: 20px;
+}
+
+/* Rooms And Rate  */
+div.h4 h4{
+    font-weight: 600;
+    line-height:.8em ;
+    font-size: 17px;
+}
+
+div.s-room{
+    width: 80%;
+    margin:5px 0 0 50px;
+}
+
+div.s-room h2{
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 1.8em;
+}
+
+div.s-room p.hot{
+    font-weight: 500;
+    margin-left: 7px;
+    line-height: .7em;
+}
+div.s-room a.book-Now{
+    padding: 8px 12px ;
+    margin-left: 180px!important;
+    border-radius: 4px;
+    margin-top: -10px;
+
+
+}
+
+}
+
+@media (max-width:992px){
+
+
+    .videoContainer iframe{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    .foot-mag{
+        margin-left: 70px;
+    }
+   
+    
+input[type= submit] {
+    padding: 12px 28px;
+    margin: 10px 0 20px 0px;
+  
+}
+
+
+.home-foot input[type=text],input[type=email] {
+    width: 60%!important;
+    padding: 10px 20px;
+    margin: 5px 0;
+}
+
+.marging-b{
+    margin: 10px 0 15px 90px;
+}
+ p.hr-3{
+    padding: 1px;
+    width:50%;
+    margin-left:80px;
+    background-color: #7b8bc7;
+    margin: 8px 0 25px 40px;
+
+    }
+    p.foot{
+        font-weight: 600;
+    }
+  
+}
+
+
+
+
+
+
+/*
+Extra small (xs) devices [portrait phones, less than 576px]
+No media query since this is the default in Bootstrap
+
+Small (sm) devices [Landscape phones, 576px and up]
+@media (min-width:576px) {...}
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width:768px) {...}
+
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width:992px) {...}
+
+
+Extra Large (xl) devices (Large Desktops, 1200px and up)
+@media (min-width:1200px) {...}
+*/
