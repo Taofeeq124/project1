@@ -1,0 +1,77 @@
+div .top-cont{
+    background-color:#eee !important;
+    background-size: cover;
+    padding:  0;
+}
+
+.top-p{
+    color:	#7cbd1e;
+    font-size: 1em;
+    font-weight: 600;
+}
+.top-t{
+    color:grey;
+    font-style:oblique ;
+}
+
+/* .nav-hover:hover{
+    border:1px solid #eee;
+    box-shadow:1px 1px 6px black;
+    border-radius: 3px;
+} */
+
+.fa-facebook, 
+.fa-twitter,
+.fa-pinterest,.fa-instagram{
+    color: black;
+    margin-left:  15px;
+}
+.fa-facebook:hover,.fa-instagram:hover,
+.fa-pinterest:hover,.fa-twitter:hover{
+ color: #7cbd1e;
+}
+
+
+
+/* OUR-BOARD */
+
+div .our_board2{
+    text-align: justify;
+    padding: 14px;
+    -webkit-box-shadow: 1px 1px 6px black;
+    box-shadow: 1px 1px 6px black;
+
+}
+
+div .our_board2:hover{
+    box-shadow:1px 1px 4px black;
+    border-radius: 10px;
+    border-top: 5px solid #7cbd1e;
+    border-bottom: 5px solid #7cbd1e;
+}
+
+.all_h2{
+
+    color: #7cbd1e  !important ;
+    text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    margin: 7px 0 15px 0;
+}
+
+ .all_h5{
+
+    color: #7cbd1e !important ;
+    text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+
+.fa-researchgate,.fa-home,
+.fa-shield-alt,.fa-umbrella,.fa-list,.fa-search ,.fa-users{
+ color: #7cbd1e;
+}
+
+
+.ours{
+    text-shadow:1px 1px 1px black;
+    border-radius: 10px;  
+
+}
