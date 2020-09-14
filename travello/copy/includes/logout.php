@@ -7,6 +7,6 @@ session_start();
     $_SESSION ['id']                 = null;
   
     
-    header("Location: newmatlogin.php");
+    header("Location: ../../index.php");
 
 ?>

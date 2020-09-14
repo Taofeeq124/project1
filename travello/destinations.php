@@ -78,240 +78,153 @@
 </div>
 
 
+	
+
+
 	<!-- Destinations -->
 
 	<div class="destinations" id="destinations">
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row">
 				<div class="col text-center">
 					<div class="section_subtitle">simply amazing places</div>
 					<div class="section_title"><h2>Popular Destinations</h2></div>
 				</div>
 			</div>
-			<div class="row destination_sorting_row">
-				<div class="col">
-					<div class="destination_sorting d-flex flex-row align-items-start justify-content-start">
-						<div class="sorting">
-							<ul class="item_sorting">
-								<li>
-									<span class="sorting_text">Sort By</span>
-									<i class="fa fa-chevron-down" aria-hidden="true"></i>
-									<ul>
-										<li class="product_sorting_btn" data-isotope-option='{ "sortBy": "original-order" }'><span>Show All</span></li>
-										<li class="product_sorting_btn" data-isotope-option='{ "sortBy": "price" }'><span>Price</span></li>
-										<li class="product_sorting_btn" data-isotope-option='{ "sortBy": "name" }'><span>Name</span></li>
-									</ul>
-								</li>
-								<li>
-									<span class="sorting_text">Categories</span>
-									<i class="fa fa-chevron-down" aria-hidden="true"></i>
-									<ul>
-										<li class="num_sorting_btn"><span>Category</span></li>
-										<li class="num_sorting_btn"><span>Category</span></li>
-										<li class="num_sorting_btn"><span>Category</span></li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-						<div class="sort_box ml-auto"><i class="fa fa-th" aria-hidden="true"></i></div>
-					</div>
+
+
+			<!--  -->
+<div class='container mt-5'>
+		<div class='row'>
+	<?php 
+
+			
+		
+		 $query = "SELECT * FROM place WHERE place_status = 'published' ";
+		 $select_query = mysqli_query ($connection, $query);
+		 while($loop = mysqli_fetch_array($select_query)){
+       
+			$place_name              = $loop ['place_name'];
+			$place_price             = $loop ['place_price'];
+			$place_image             = $loop ['place_image'];
+			$place_content           = $loop ['place_content'] ; 
+			// $place_status            = $loop ['place_status'] ;
+
+			echo "
+
+
+	
+			
+			<div class='col-lg-4 mb-5'>
+			<a href='destinations.php'>
+				<img class='img-responsive' src='images/$place_image'  width='100%' alt='place images'> </a>
+				
+				<div class='destination_content'>
+					<div class='destination_title'><a href='destinations.php'>$place_name</a></div>
+					<div class='destination_subtitle'><p>$place_content</p></div>
+					<div class='destination_price'>From $$place_price</div>
+				</div>
+
+				
+	<div class='destination_list'>
+	<ul>
+		<li>5 Stars Hotel</li>
+		<li>All Inclusive</li>
+		<li>Flight tickets included</li>
+		<li>Guided visits</li>
+	</ul>
+</div>
+			
+			</div>
+			
+		
+
+			
+			";
+		
+			}
+		
+		?>
+	
+		</div> 
+		
+	</div>
+
+
+
+		</div>
+	</div>
+
+
+	 
+
+
+	<!-- Testimonials -->
+
+	<div class="testimonials" id="testimonials">
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/testimonials.jpg" data-speed="0.8"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<div class="section_subtitle">simply amazing places</div>
+					<div class="section_title"><h2>Testimonials</h2></div>
 				</div>
 			</div>
-			<div class="row destinations_row">
+			<div class="row testimonials_row">
 				<div class="col">
-					<div class="destinations_container item_grid">
 
-						<!-- Destination -->
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="images/destination_1.jpg" alt="">
-								<div class="spec_offer text-center"><a href="#">Special Offer</a></div>
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="#">Bali</a></div>
-								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
-								<div class="destination_price">From $679</div>
-								<div class="destination_list">
-									<ul>
-										<li>5 Stars Hotel</li>
-										<li>All Inclusive</li>
-										<li>Flight tickets included</li>
-										<li>Guided visits</li>
-									</ul>
+					<!-- Testimonials Slider -->
+					<div class="testimonials_slider_container">
+						<div class="owl-carousel owl-theme testimonials_slider">
+							
+							<!-- Slide -->
+							<div class="owl-item text-center">
+								<div class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. lobortis dolor. Cras placerat lectus a posuere aliquet. Curabitur quis vehicula odio.</div>
+								<div class="testimonial_author">
+									<div class="testimonial_author_content d-flex flex-row align-items-end justify-content-start">
+										<div>john turner,</div>
+										<div>client</div>
+									</div>
 								</div>
 							</div>
-						</div>
 
-						<!-- Destination -->
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="images/destination_2.jpg" alt="">
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="#">Indonesia</a></div>
-								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
-								<div class="destination_price">From $579</div>
-								<div class="destination_list">
-									<ul>
-										<li>5 Stars Hotel</li>
-										<li>All Inclusive</li>
-										<li>Flight tickets included</li>
-										<li>Guided visits</li>
-									</ul>
+							<!-- Slide -->
+							<div class="owl-item text-center">
+								<div class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. lobortis dolor. Cras placerat lectus a posuere aliquet. Curabitur quis vehicula odio.</div>
+								<div class="testimonial_author">
+									<div class="testimonial_author_content d-flex flex-row align-items-end justify-content-start">
+										<div>john turner,</div>
+										<div>client</div>
+									</div>
 								</div>
 							</div>
-						</div>
 
-						<!-- Destination -->
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="images/destination_3.jpg" alt="">
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="#">San Francisco</a></div>
-								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
-								<div class="destination_price">From $399</div>
-								<div class="destination_list">
-									<ul>
-										<li>5 Stars Hotel</li>
-										<li>All Inclusive</li>
-										<li>Flight tickets included</li>
-										<li>Guided visits</li>
-									</ul>
+							<!-- Slide -->
+							<div class="owl-item text-center">
+								<div class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. lobortis dolor. Cras placerat lectus a posuere aliquet. Curabitur quis vehicula odio.</div>
+								<div class="testimonial_author">
+									<div class="testimonial_author_content d-flex flex-row align-items-end justify-content-start">
+										<div>john turner,</div>
+										<div>client</div>
+									</div>
 								</div>
 							</div>
-						</div>
 
-						<!-- Destination -->
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="images/destination_4.jpg" alt="">
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="#">Paris</a></div>
-								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
-								<div class="destination_price">From $639</div>
-								<div class="destination_list">
-									<ul>
-										<li>5 Stars Hotel</li>
-										<li>All Inclusive</li>
-										<li>Flight tickets included</li>
-										<li>Guided visits</li>
-									</ul>
-								</div>
-							</div>
 						</div>
-
-						<!-- Destination -->
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="images/destination_5.jpg" alt="">
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="#">Phi Phi Island</a></div>
-								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
-								<div class="destination_price">From $929</div>
-								<div class="destination_list">
-									<ul>
-										<li>5 Stars Hotel</li>
-										<li>All Inclusive</li>
-										<li>Flight tickets included</li>
-										<li>Guided visits</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-
-						<!-- Destination -->
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="images/destination_6.jpg" alt="">
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="#">Mykonos</a></div>
-								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
-								<div class="destination_price">From $719</div>
-								<div class="destination_list">
-									<ul>
-										<li>5 Stars Hotel</li>
-										<li>All Inclusive</li>
-										<li>Flight tickets included</li>
-										<li>Guided visits</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-
-						<!-- Destination -->
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="images/destination_7.jpg" alt="">
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="#">Paris</a></div>
-								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
-								<div class="destination_price">From $515</div>
-								<div class="destination_list">
-									<ul>
-										<li>5 Stars Hotel</li>
-										<li>All Inclusive</li>
-										<li>Flight tickets included</li>
-										<li>Guided visits</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-
-						<!-- Destination -->
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="images/destination_8.jpg" alt="">
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="#">Phi Phi Island</a></div>
-								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
-								<div class="destination_price">From $879</div>
-								<div class="destination_list">
-									<ul>
-										<li>5 Stars Hotel</li>
-										<li>All Inclusive</li>
-										<li>Flight tickets included</li>
-										<li>Guided visits</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-
-						<!-- Destination -->
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="images/destination_9.jpg" alt="">
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="#">Mykonos</a></div>
-								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
-								<div class="destination_price">From $679</div>
-								<div class="destination_list">
-									<ul>
-										<li>5 Stars Hotel</li>
-										<li>All Inclusive</li>
-										<li>Flight tickets included</li>
-										<li>Guided visits</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-
 					</div>
-				</div>
-			</div>
-			<div class="row load_more_row">
-				<div class="col">
-					<div class="button load_more_button"><a href="#">load more</a></div>
 				</div>
 			</div>
 		</div>
+		<div class="test_nav">
+			<ul class="d-flex flex-column align-items-end justify-content-end">
+				<li><a href="#">City Breaks Clients<span>01</span></a></li>
+				<li><a href="#">Cruises Clients<span>02</span></a></li>
+				<li><a href="#">All Inclusive Clients<span>03</span></a></li>
+			</ul>
+		</div>
 	</div>
+
+
 
 	<!-- Footer -->
 <?php  include "./includes/footer.php" ?>

@@ -33,7 +33,7 @@
 
 <h4 class='btn btn-default' ><a href='message.php' > View All Messages  </a></h4>  
 <h4 class='btn btn-default'>
-<a href="message.php?source=reply_message&reply_message=<?php $message_id?>">Reply this message</a> </h4> 
+<a href="message.php?source=reply_message&reply_message=<?php $message_id ?>">Reply this message</a> </h4> 
 
 </div>
 

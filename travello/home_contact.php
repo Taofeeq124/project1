@@ -38,6 +38,7 @@
 
 									<li ><a href="home.php">Home</a></li>
 									<li><a href="home_about.php">About us</a></li>
+									<li ><a href="home_booking.php">Book Here</a></li>
 									<!-- <li><a href="#">Services</a></li>
 									<li><a href="news.php">News</a></li> -->
 
@@ -48,7 +49,7 @@
                                     </li>  -->
                                     
 <li class="dropdown"> 
-<a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong class="mr-2">Welcome</strong><i class="fa fa-user"></i>  <?php  echo $_SESSION ['username'] ;?> <b class="caret"></b></a> 
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong class="mr-2">Hi,</strong><i class="fa fa-user"></i>  <?php  echo $_SESSION ['username'] ;?> <b class="caret"></b></a> 
 <ul class="dropdown-menu">
 <li>
 <a href="#"><i class="fa fa-fw fa-user ml-2"></i> Profile</a>
@@ -152,6 +153,7 @@
 			<ul>
 				<li><a href="home.php">Home</a></li>
 				<li><a href="home_about.php">About us</a></li>
+				<li ><a href="home_booking.php">Book Here</a></li>
 				<li><a href="#">Services</a></li>
 				<li><a href="home_contact.php">Contact</a></li>
 			</ul>

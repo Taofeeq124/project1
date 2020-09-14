@@ -36,6 +36,7 @@
 
 									<li ><a href="home.php">Home</a></li>
 									<li><a href="home_about.php">About us</a></li>
+                                    <li ><a href="home_booking.php">Book Here</a></li>
 									<!-- <li><a href="#">Services</a></li>
 									<li><a href="news.php">News</a></li> -->
 
@@ -45,8 +46,8 @@
                                     <a > <?php// echo "<img class='img-responsive' src=' ./images/$_SESSION ['user_image'] '  width='50%' alt='place images'> " ;?> </a>
                                     </li>  -->
                                     
-<li class="dropdown">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php  echo $_SESSION ['username'] ;?> <b class="caret"></b></a> 
+ <li class="dropdown"> 
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong class="mr-2">Hi,</strong><i class="fa fa-user"></i>  <?php  echo $_SESSION ['username'] ;?> <b class="caret"></b></a> 
 <ul class="dropdown-menu">
 <li>
 <a href="#"><i class="fa fa-fw fa-user ml-2"></i> Profile</a>
@@ -151,7 +152,7 @@
 				<li><a href="inex.php">Home</a></li>
 				<li><a href="about.php">About us</a></li>
 				<li><a href="#">Services</a></li>
-				<li><a href="news.php">News</a></li>
+				<li ><a href="home_booking.php">Book Here</a></li>
 				<!-- <li><a href="signup.php">signup</a></li>
 				<li><a href="signin.php">Login</a></li> -->
 				<li><a href="contact.php">Contact</a></li>
@@ -356,7 +357,7 @@ if(isset($_POST['submit'])){
          echo   $mssg = "<h2 class='text-center mt-2' style='color: black !important; font-weight:800;'> Ooops! It maybe Your searched city does match with your budget in our database, Try again Folks. </h2> ";
         }else{
     
-     //$query = "SELECT * FROM place ";
+     //$query = "SELECT * FROM place  ";
      $select_query = mysqli_query ($connection, $query);
      while($loop = mysqli_fetch_array($select_query)){
    
@@ -371,7 +372,7 @@ if(isset($_POST['submit'])){
 
 
         
-        <div class='col-lg-4 '>
+        <div class='col-lg-4 mb-5 '>
             <img class='img-responsive' src='images/$place_image'  width='100%' alt='place images'>
             
             <div class='destination_content'>

@@ -212,7 +212,7 @@
 
 			
 		
-		 $query = "SELECT * FROM place ";
+		 $query = "SELECT * FROM place WHERE place_status = 'published' ";
 		 $select_query = mysqli_query ($connection, $query);
 		 while($loop = mysqli_fetch_array($select_query)){
        
@@ -227,11 +227,12 @@
 
 	
 			
-			<div class='col-lg-4 '>
-				<img class='img-responsive' src='images/$place_image'  width='100%' alt='place images'>
+			<div class='col-lg-4 mb-5'>
+			<a href='destinations.php'>
+				<img class='img-responsive' src='images/$place_image'  width='100%' alt='place images'> </a>
 				
 				<div class='destination_content'>
-					<div class='destination_title'><a href='destinations.html'>$place_name</a></div>
+					<div class='destination_title'><a href='destinations.php'>$place_name</a></div>
 					<div class='destination_subtitle'><p>$place_content</p></div>
 					<div class='destination_price'>From $$place_price</div>
 				</div>
@@ -247,7 +248,7 @@
 		
 		?>
 	
-		</div>
+		</div> 
 		
 	</div>
 

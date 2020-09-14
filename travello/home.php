@@ -17,6 +17,8 @@
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/mystyle.css">
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+
+
 </head>
 <body>
 
@@ -30,15 +32,14 @@
 				<div class="col">
 					<div class="header_content d-flex flex-row align-items-center justify-content-start">
 						<div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
-							<div class="logo"><a href="index.html">Travello</a></div>
+							<div class="logo"><a href="home.php">Travello</a></div>
 							<nav class="main_nav_home">
 								<ul class="d-flex flex-row align-items-start justify-content-start">
 
 									<li class="active"><a href="home.php">Home</a></li>
 									<li><a href="home_about.php">About us</a></li>
-									<!-- <li><a href="#">Services</a></li>
-									<li><a href="news.php">News</a></li> -->
-
+                                    <li class="active"><a href="home_booking.php">Book Here</a></li>
+									
 
 									<li><a href="home_contact.php">Contact</a></li>
                                     <!-- <li class="">
@@ -46,19 +47,10 @@
                                     </li>  -->
                                     
 <li class="dropdown">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong class="mr-2">Welcome</strong><i class="fa fa-user"></i> <?php  echo $_SESSION ['username'] ;?> <b class="caret"></b></a> 
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong class="mr-2">Hi,</strong> <?php  echo $_SESSION ['username'] ;?> <b class="caret"></b></a> 
 <ul class="dropdown-menu">
-<li>
-<a href="#"><i class="fa fa-fw fa-user ml-2"></i> Profile</a>
-</li>
-<li class="divider"></li>
 
-<li>
-<a href="#"><i class="fa fa-fw fa-upload ml-2"></i>Upload Image</a>
-</li>
- 
 
-<li>
 
 <?php 
 
@@ -91,32 +83,15 @@
 
 
 
-<a href="#"><i class="ml-2"></i>
-<form action="home.php" method="post" enctype="multipart/form-data">
- <input type="file" name="image" id="">
- <input type="submit" name="submit" class="btn btn-success" value="Upload">
-</form> 
-</a>
-</li>
-<li class="divider"></li>
 <li>
 <a href="user_logout.php"><i class="fa fa-fw fa-power-off ml-2"></i> Log Out</a>
 </li>
 </ul>
 
 
-
-
-
-
-
                                 </ul>
                             </nav>
-                            
-                           
-							<!-- <div class="header_phone ml-auto "> <a href=" tel: 09030014836"  style="color:white !important;"> Call Us</a></div> -->
-
-							<!-- Hamburger -->
+                         <!-- Hamburger -->
 
 							<div class="hamburger ml-auto">
 								<i class="fa fa-bars" aria-hidden="true"></i>
@@ -143,7 +118,7 @@
 
 	<div class="menu">
 		<div class="menu_header d-flex flex-row align-items-center justify-content-start">
-			<div class="menu_logo"><a href="index.html">Travello</a></div>
+			<div class="menu_logo"><a href="home.php">Travello</a></div>
 			<div class="menu_close_container ml-auto"><div class="menu_close"><div></div><div></div></div></div>
 		</div>
 		<div class="menu_content">
@@ -155,7 +130,6 @@
 			</ul>
 		</div>
 		<div class="menu_social">
-			<div class="menu_phone ml-auto"><a href=" tel: 09030014836"  style="color:white !important;"> Call us: +2349030014836</a></div>
 			<ul class="d-flex flex-row align-items-start justify-content-start">
 				<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
 				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -380,7 +354,7 @@
 
 			
 		
-		 $query = "SELECT * FROM place ";
+		 $query = "SELECT * FROM place WHERE place_status = 'published' ";
 		 $select_query = mysqli_query ($connection, $query);
 		 while($loop = mysqli_fetch_array($select_query)){
        
@@ -388,21 +362,24 @@
 			$place_price             = $loop ['place_price'];
 			$place_image             = $loop ['place_image'];
 			$place_content           = $loop ['place_content'] ; 
-			// $place_status            = $loop ['place_status'] ;
+		    $place_status            = $loop ['place_status'] ;
 
 			echo "
 
 
 	
-			
-			<div class='col-lg-4 '>
-				<img class='img-responsive' src='images/$place_image'  width='100%' alt='place images'>
+				
+			<div class='col-lg-4 mb-5'>
+			<a href='home_destinations.php'>
+				<img class='img-responsive' src='images/$place_image'  width='100%' alt='place images'> </a>
 				
 				<div class='destination_content'>
-					<div class='destination_title'><a href='destinations.html'>$place_name</a></div>
+					<div class='destination_title'><a href='home_destinations.php'>$place_name</a></div>
 					<div class='destination_subtitle'><p>$place_content</p></div>
 					<div class='destination_price'>From $$place_price</div>
 				</div>
+
+
 			
 			</div>
 			

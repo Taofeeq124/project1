@@ -1,8 +1,7 @@
 
 <?php include "includes/header.php"; ?>
   
-  <div id="wrapper">
-
+  
       <div id="page-wrapper">
 
           <div class="container-fluid">
@@ -13,7 +12,7 @@
 
 
                       <h1 class="page-header">
-                         Welcome to Admin
+                         Welcome to Travello
                          <small><?php // echo  $_SESSION ['username'] ; ?></small>
                       </h1>
              <?php   if(isset($_GET['source'])){

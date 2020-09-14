@@ -37,6 +37,7 @@
 								    <li ><a href="index.php">Home</a></li>
 									<li><a href="about.php">About us</a></li>
 									<li><a href="#">Services</a></li>
+									<li><a href="booking.php">Book Here</a></li>
 									<li><a href="news.php">News</a></li>
 									<li class="active"><a href="signup.php">signup</a></li>
 									<li><a href="signin.php">Login</a></li>
@@ -82,6 +83,7 @@
 				<li><a href="inex.php">Home</a></li>
 				<li><a href="about.php">About us</a></li>
 				<li><a href="#">Services</a></li>
+				<li><a href="booking.php">Book Here</a></li>
 				<li><a href="news.php">News</a></li>
 				<li ><a href="signup.php">signup</a></li>
 				<li><a href="signin.php">Login</a></li>
@@ -243,7 +245,7 @@
                             
                             <div class="row">
 								<div class="col-lg-6" style="margin-bottom: 18px">
-									<div><input type="file" class="contact_input contact_input_email inpt"  name="image" required="required"><div class="input_border"></div></div>
+									<div><input type="file" class="contact_input contact_input_subject inpt form-control"  name="image" ><div class="iput_border"></div></div>
 								</div>
 								<div class="col-lg-6" style="margin-bottom: 18px">
 									<div><input type="password" class="contact_input contact_input_subject inpt" placeholder="Your Password" name="password" required="required"><div class="input_border"></div></div>

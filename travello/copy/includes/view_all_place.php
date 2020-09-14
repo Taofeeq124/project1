@@ -11,6 +11,8 @@
     <th>Price</th>
     <th>Image</th>
     <th>Post Status</th>
+    <th>Publish</th>
+    <th>Draft</th>
     <th>Edit</th>
     <th>Delete</th>
 </tr>
@@ -38,6 +40,8 @@ while($loop = mysqli_fetch_assoc($select_users_query )) {
     echo "<td>$place_price</td>";
     echo " <td> <img class='img-responsive' width='100' src='../images/$place_image'> </td> ";
     echo "<td>$place_status</td>";
+    echo "<td> <a href='place.php?publish=$place_id '>publish</a></td>";
+    echo "<td> <a href='place.php?draft=$place_id '>draft</a></td>";
     echo " <td> <a class='delete_link'  href='javascript: void(0)' rel='$place_id '> <i class='fa fa-trash-o' style='font-size:20px;color:red'></i> <a/></td> ";
     echo "<td> <a href='place.php?source=edit_place&edit_place=$place_id '>Edit</a></td>";
    
@@ -66,6 +70,37 @@ if(isset($_GET['delete'])){
 }
 
 ?>
+
+<?php 
+
+if(isset($_GET['draft'])){
+
+    $draft_place_id = $_GET['draft'];
+    $query = "UPDATE place SET place_status = 'draft' WHERE id = {$draft_place_id} ";
+    $draft_query = mysqli_query($connection,$query);
+    if(!$draft_query){
+        die("Query Failed" . mysqli_error($connection));
+    }
+    header("Location:place.php");
+}
+
+?>
+
+<?php 
+
+if(isset($_GET['publish'])){
+
+    $publish_place_id = $_GET['publish'];
+    $query = "UPDATE place SET place_status = 'published' WHERE id = {$publish_place_id} ";
+    $approve_query = mysqli_query($connection,$query);
+    if(!$approve_query){
+        die("Query Failed" . mysqli_error($connection));
+    }
+    header("Location:place.php");
+}
+
+?>
+
 
 
 <script>

@@ -129,6 +129,19 @@
                             
                         </ul>
                     </li>
+
+
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#booking"><i class="fa fa-fw fa-arrows-v"></i>Booking<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="booking" class="collapse">
+                            <li>
+                                <a href="booking.php?source=view_all_booking">View all Booking</a>
+                            </li>
+
+                            
+                        </ul>
+                    </li>
+                    
                     
                  
                 </ul>

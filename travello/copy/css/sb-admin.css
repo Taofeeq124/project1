@@ -8,7 +8,7 @@
 
 body {
     margin-top: 100px;
-    background-color: #222;
+    background-color: grey;
 }
 
 @media(min-width:768px) {
@@ -50,7 +50,7 @@ body {
 
 .top-nav>li {
     display: inline-block;
-    float: left;
+   
 }
 
 .top-nav>li>a {

@@ -35,6 +35,7 @@
 								<ul class="d-flex flex-row align-items-start justify-content-start">
 									<li ><a href="index.php">Home</a></li>
 									<li><a href="about.php">About us</a></li>
+                                    <li><a href="booking.php">Book Here</a></li>
 									<li class="active"><a href="search.php">Search</a></li>
 									<li><a href="news.php">News</a></li>
 									<li><a href="signup.php">signup</a></li>
@@ -79,6 +80,7 @@
 				<li><a href="inex.php">Home</a></li>
 				<li><a href="about.php">About us</a></li>
 				<li><a href="#">Services</a></li>
+                <li><a href="booking.php">Book Here</a></li>
 				<li><a href="news.php">News</a></li>
 				<li><a href="signup.php">signup</a></li>
 				<li><a href="signin.php">Login</a></li>
@@ -291,14 +293,14 @@ if(isset($_POST['submit'])){
         $place_price             = $loop ['place_price'];
         $place_image             = $loop ['place_image'];
         $place_content           = $loop ['place_content'] ; 
-        // $place_status            = $loop ['place_status'] ;
+        $place_status            = $loop ['place_status'] ;
 
         echo "
 
 
 
         
-        <div class='col-lg-4 '>
+        <div class='col-lg-4 mb-5'>
             <img class='img-responsive' src='images/$place_image'  width='100%' alt='place images'>
             
             <div class='destination_content'>

@@ -35,6 +35,7 @@
 								    <li ><a href="index.php">Home</a></li>
 									<li><a href="about.php">About us</a></li>
 									<li><a href="#">Services</a></li>
+									<li><a href="booking.php">Book Here</a></li>
 									<li><a href="news.php">News</a></li>
 									<li ><a href="signup.php">signup</a></li>
 									<li class="active"><a href="signin.php">Login</a></li>
@@ -80,6 +81,7 @@
 				<li><a href="inex.php">Home</a></li>
 				<li><a href="about.php">About us</a></li>
 				<li><a href="#">Services</a></li>
+				<li><a href="booking.php">Book Here</a></li>
 				<li><a href="news.php">News</a></li>
 				<li><a href="signup.php">signup</a></li>
 				<li><a href="signin.php">Login</a></li>
@@ -184,7 +186,7 @@
    if (isset($_POST['submit'])) 
    {
   
-   $error = ""; 
+   
    $username = $_POST['username'];
    $password = $_POST['password'];
  
@@ -211,12 +213,12 @@ while($row = mysqli_fetch_array($select_user_query)){
    $db_user_password = $row['user_password'];
 }
 
-   if($username !== $db_username && $password !== $db_user_password){
+//    if($username !== $db_username && $password !== $db_user_password){
 
+//    $error = "Your Password does not match with your username , Try again!!"; 
+//    header("Location: signin.php ");
 
-   header("Location: signin.php ");
-
-   }elseif ($username == $db_username && $password == $db_user_password){
+   if ($username == $db_username && $password == $db_user_password){
 
 	$_SESSION ['username']       = $username;
 	$_SESSION ['user_password']  = $db_user_password;
@@ -228,6 +230,7 @@ while($row = mysqli_fetch_array($select_user_query)){
 }else{
 
    header("Location: index.php ");
+   
 }
 
    }
@@ -244,7 +247,7 @@ while($row = mysqli_fetch_array($select_user_query)){
 
                 <h3 class="text-center">Login Here</h3>
  
-
+   					<?php //echo  $error ; ?>
 					<div class="contact_form_container">
 						<form action="signin.php" method="post" autocomplete="off" id="contact_form" class="contact_form">
 							
@@ -257,7 +260,7 @@ while($row = mysqli_fetch_array($select_user_query)){
 									<div><input type="password" class="contact_input contact_input_subject inpt" placeholder="Your password" name="password" required="required"><div class="input_border"></div></div>
 								</div>
 							</div>
-							<input type="submit" value="Submit"  class="contact_button" name="submit">
+							<input type="submit" value="Login"  class="contact_button" name="submit">
                         
 						</form>
 					</div>
